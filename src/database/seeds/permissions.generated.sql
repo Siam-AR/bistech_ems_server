@@ -34,3 +34,4 @@ INSERT INTO permissions (id, key, description) VALUES
   (gen_random_uuid(), 'feedback.read', 'Read feedback within allowed scope'),
   (gen_random_uuid(), 'feedback.manage', 'Triage and resolve feedback items')
 ON CONFLICT (key) DO NOTHING;
+

@@ -13,3 +13,4 @@ BEGIN
   RAISE EXCEPTION '% on % is not allowed: table is append-only', TG_OP, TG_TABLE_NAME
     USING ERRCODE = '42501';
 END $$;
+

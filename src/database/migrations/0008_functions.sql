@@ -12,3 +12,4 @@ LANGUAGE sql STABLE AS $$
   WHERE d.organization_id = p_org
     AND d.head_employee_id = p_head_employee_id
 $$;
+

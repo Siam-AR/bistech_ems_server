@@ -69,3 +69,4 @@ CREATE TABLE idempotency_keys (
   CONSTRAINT idempotency_user_fk FOREIGN KEY (organization_id, user_id) REFERENCES users (organization_id, id)
 );
 CREATE INDEX idempotency_cleanup_idx ON idempotency_keys (created_at);
+

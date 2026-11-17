@@ -8,3 +8,4 @@ GRANT CONNECT ON DATABASE ems TO ems_app;
 REVOKE CREATE ON SCHEMA public FROM PUBLIC;
 ALTER ROLE ems_app SET statement_timeout = '10s';
 ALTER ROLE ems_app SET idle_in_transaction_session_timeout = '30s';
+

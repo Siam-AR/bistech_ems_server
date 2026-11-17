@@ -137,3 +137,4 @@ CREATE TABLE otp_challenges (
 CREATE UNIQUE INDEX otp_one_live_per_user_purpose ON otp_challenges (user_id, purpose) WHERE consumed_at IS NULL;
 CREATE INDEX otp_rate_idx ON otp_challenges (user_id, created_at DESC);
 CREATE INDEX otp_cleanup_idx ON otp_challenges (expires_at);
+

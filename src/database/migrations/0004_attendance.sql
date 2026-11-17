@@ -40,3 +40,4 @@ CREATE TABLE attendance_corrections (
 );
 CREATE INDEX corrections_record_idx ON attendance_corrections (attendance_record_id, created_at DESC);
 CREATE INDEX corrections_employee_day_idx ON attendance_corrections (employee_id, work_date);
+

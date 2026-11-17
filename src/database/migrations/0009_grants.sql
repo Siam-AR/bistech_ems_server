@@ -28,3 +28,4 @@ GRANT SELECT, INSERT, DELETE ON user_roles, holidays TO ems_app;
 GRANT SELECT ON permissions TO ems_app;
 
 GRANT EXECUTE ON FUNCTION managed_employee_ids(uuid, uuid) TO ems_app;
+

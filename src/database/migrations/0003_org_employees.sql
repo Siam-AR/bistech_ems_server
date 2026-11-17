@@ -104,3 +104,4 @@ CREATE TABLE employee_employment_history (
   CONSTRAINT history_changed_by_fk FOREIGN KEY (organization_id, changed_by)  REFERENCES users (organization_id, id)
 );
 CREATE INDEX history_employee_idx ON employee_employment_history (employee_id, effective_date DESC, created_at DESC);
+

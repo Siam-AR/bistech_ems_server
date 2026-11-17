@@ -24,3 +24,4 @@ BEGIN
       t || '_append_only_truncate', t);
   END LOOP;
 END $$;
+

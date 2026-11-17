@@ -150,3 +150,4 @@ CREATE TABLE task_status_events (
   CONSTRAINT task_events_actor_fk      FOREIGN KEY (organization_id, actor_user_id) REFERENCES users (organization_id, id)
 );
 CREATE INDEX task_events_assignment_idx ON task_status_events (assignment_id, created_at, id);
+
